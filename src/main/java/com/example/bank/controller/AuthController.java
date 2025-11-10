@@ -47,6 +47,10 @@ public class AuthController
 			  	String token = jwtUtil.generateToken(u.getEmail(), u.getRole());
 			  	return ResponseEntity.ok(new AuthResponse(token, u.getRole()));
 		  }
-	
 
+		  public AuthController(UserService u, AccountService a, JwtUtil j)
+		  {	
+			  	this.userService=u;
+			  	this.accountService=a;this.jwtUtil=j;
+		  }
 }
