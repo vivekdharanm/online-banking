@@ -1,16 +1,3 @@
-package com.example.bank.controller;
-
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import com.example.bank.config.JwtUtil;
-import com.example.bank.dto.AuthRequest;
-import com.example.bank.dto.AuthResponse;
-import com.example.bank.dto.RegisterRequest;
-import com.example.bank.entity.Account;
-import com.example.bank.entity.User;
-import com.example.bank.service.AccountService;
-import com.example.bank.service.UserService;
 
 public class AuthController 
 {
